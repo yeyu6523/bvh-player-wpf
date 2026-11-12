@@ -1,0 +1,781 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T11:23:50Z",
+  "title": "Design System: BVH Player",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Workbench Blue",
+        "purpose": "UI commands, slider progress, and current speed.",
+        "tonalRamp": [
+          "oklch(15% 0.0892 262.93)",
+          "oklch(27% 0.1387 262.93)",
+          "oklch(39% 0.1783 262.93)",
+          "oklch(51% 0.1982 262.93)",
+          "oklch(63% 0.1982 262.93)",
+          "oklch(75% 0.1684 262.93)",
+          "oklch(87% 0.1189 262.93)",
+          "oklch(95% 0.0495 262.93)"
+        ]
+      },
+      "action-focus": {
+        "role": "primary",
+        "displayName": "Keyboard Blue",
+        "purpose": "Button keyboard-focus border.",
+        "tonalRamp": [
+          "oklch(15% 0.0829 260.33)",
+          "oklch(27% 0.1290 260.33)",
+          "oklch(39% 0.1659 260.33)",
+          "oklch(51% 0.1843 260.33)",
+          "oklch(63% 0.1843 260.33)",
+          "oklch(75% 0.1567 260.33)",
+          "oklch(87% 0.1106 260.33)",
+          "oklch(95% 0.0461 260.33)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "purpose": "Main labels on light surfaces.",
+        "tonalRamp": [
+          "oklch(15% 0.0189 258.77)",
+          "oklch(27% 0.0294 258.77)",
+          "oklch(39% 0.0378 258.77)",
+          "oklch(51% 0.0420 258.77)",
+          "oklch(63% 0.0420 258.77)",
+          "oklch(75% 0.0357 258.77)",
+          "oklch(87% 0.0252 258.77)",
+          "oklch(95% 0.0105 258.77)"
+        ]
+      },
+      "secondary-text": {
+        "role": "neutral",
+        "displayName": "Secondary Text",
+        "purpose": "Supporting metadata and checkbox labels.",
+        "tonalRamp": [
+          "oklch(15% 0.0182 256.42)",
+          "oklch(27% 0.0284 256.42)",
+          "oklch(39% 0.0365 256.42)",
+          "oklch(51% 0.0405 256.42)",
+          "oklch(63% 0.0405 256.42)",
+          "oklch(75% 0.0345 256.42)",
+          "oklch(87% 0.0243 256.42)",
+          "oklch(95% 0.0101 256.42)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "purpose": "Header, panels, and reversed control content.",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.00)",
+          "oklch(27% 0.0000 0.00)",
+          "oklch(39% 0.0000 0.00)",
+          "oklch(51% 0.0000 0.00)",
+          "oklch(63% 0.0000 0.00)",
+          "oklch(75% 0.0000 0.00)",
+          "oklch(87% 0.0000 0.00)",
+          "oklch(95% 0.0000 0.00)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Cool Canvas",
+        "purpose": "Application background.",
+        "tonalRamp": [
+          "oklch(15% 0.0028 255.47)",
+          "oklch(27% 0.0044 255.47)",
+          "oklch(39% 0.0056 255.47)",
+          "oklch(51% 0.0062 255.47)",
+          "oklch(63% 0.0062 255.47)",
+          "oklch(75% 0.0053 255.47)",
+          "oklch(87% 0.0037 255.47)",
+          "oklch(95% 0.0016 255.47)"
+        ]
+      },
+      "button-border": {
+        "role": "neutral",
+        "displayName": "Control Outline",
+        "purpose": "Neutral button outline.",
+        "tonalRamp": [
+          "oklch(15% 0.0076 259.42)",
+          "oklch(27% 0.0118 259.42)",
+          "oklch(39% 0.0152 259.42)",
+          "oklch(51% 0.0168 259.42)",
+          "oklch(63% 0.0168 259.42)",
+          "oklch(75% 0.0143 259.42)",
+          "oklch(87% 0.0101 259.42)",
+          "oklch(95% 0.0042 259.42)"
+        ]
+      },
+      "header-divider": {
+        "role": "neutral",
+        "displayName": "Header Edge",
+        "purpose": "Header bottom line.",
+        "tonalRamp": [
+          "oklch(15% 0.0070 257.20)",
+          "oklch(27% 0.0109 257.20)",
+          "oklch(39% 0.0140 257.20)",
+          "oklch(51% 0.0156 257.20)",
+          "oklch(63% 0.0156 257.20)",
+          "oklch(75% 0.0132 257.20)",
+          "oklch(87% 0.0093 257.20)",
+          "oklch(95% 0.0039 257.20)"
+        ]
+      },
+      "separator": {
+        "role": "neutral",
+        "displayName": "Section Line",
+        "purpose": "Sidebar separators.",
+        "tonalRamp": [
+          "oklch(15% 0.0049 256.70)",
+          "oklch(27% 0.0076 256.70)",
+          "oklch(39% 0.0098 256.70)",
+          "oklch(51% 0.0109 256.70)",
+          "oklch(63% 0.0109 256.70)",
+          "oklch(75% 0.0092 256.70)",
+          "oklch(87% 0.0065 256.70)",
+          "oklch(95% 0.0027 256.70)"
+        ]
+      },
+      "slider-track": {
+        "role": "neutral",
+        "displayName": "Slider Bed",
+        "purpose": "Unfilled slider track.",
+        "tonalRamp": [
+          "oklch(15% 0.0114 257.65)",
+          "oklch(27% 0.0177 257.65)",
+          "oklch(39% 0.0227 257.65)",
+          "oklch(51% 0.0252 257.65)",
+          "oklch(63% 0.0252 257.65)",
+          "oklch(75% 0.0214 257.65)",
+          "oklch(87% 0.0151 257.65)",
+          "oklch(95% 0.0063 257.65)"
+        ]
+      },
+      "thumb-focus": {
+        "role": "primary",
+        "displayName": "Deep Focus Blue",
+        "purpose": "Focused slider-thumb border.",
+        "tonalRamp": [
+          "oklch(15% 0.0425 261.89)",
+          "oklch(27% 0.0662 261.89)",
+          "oklch(39% 0.0851 261.89)",
+          "oklch(51% 0.0945 261.89)",
+          "oklch(63% 0.0945 261.89)",
+          "oklch(75% 0.0803 261.89)",
+          "oklch(87% 0.0567 261.89)",
+          "oklch(95% 0.0236 261.89)"
+        ]
+      },
+      "viewport": {
+        "role": "neutral",
+        "displayName": "Observation Field",
+        "purpose": "Viewport backing.",
+        "tonalRamp": [
+          "oklch(15% 0.0178 256.72)",
+          "oklch(27% 0.0277 256.72)",
+          "oklch(39% 0.0356 256.72)",
+          "oklch(51% 0.0396 256.72)",
+          "oklch(63% 0.0396 256.72)",
+          "oklch(75% 0.0336 256.72)",
+          "oklch(87% 0.0237 256.72)",
+          "oklch(95% 0.0099 256.72)"
+        ]
+      },
+      "viewport-button": {
+        "role": "neutral",
+        "displayName": "View Control Surface",
+        "purpose": "Dark camera-command button.",
+        "tonalRamp": [
+          "oklch(15% 0.0206 255.25)",
+          "oklch(27% 0.0321 255.25)",
+          "oklch(39% 0.0413 255.25)",
+          "oklch(51% 0.0458 255.25)",
+          "oklch(63% 0.0458 255.25)",
+          "oklch(75% 0.0390 255.25)",
+          "oklch(87% 0.0275 255.25)",
+          "oklch(95% 0.0115 255.25)"
+        ]
+      },
+      "viewport-button-border": {
+        "role": "neutral",
+        "displayName": "View Control Outline",
+        "purpose": "Dark camera-command outline.",
+        "tonalRamp": [
+          "oklch(15% 0.0211 257.91)",
+          "oklch(27% 0.0328 257.91)",
+          "oklch(39% 0.0422 257.91)",
+          "oklch(51% 0.0469 257.91)",
+          "oklch(63% 0.0469 257.91)",
+          "oklch(75% 0.0398 257.91)",
+          "oklch(87% 0.0281 257.91)",
+          "oklch(95% 0.0117 257.91)"
+        ]
+      },
+      "viewport-button-text": {
+        "role": "neutral",
+        "displayName": "View Control Text",
+        "purpose": "Dark camera-command label.",
+        "tonalRamp": [
+          "oklch(15% 0.0072 253.90)",
+          "oklch(27% 0.0112 253.90)",
+          "oklch(39% 0.0144 253.90)",
+          "oklch(51% 0.0160 253.90)",
+          "oklch(63% 0.0160 253.90)",
+          "oklch(75% 0.0136 253.90)",
+          "oklch(87% 0.0096 253.90)",
+          "oklch(95% 0.0040 253.90)"
+        ]
+      },
+      "viewport-title": {
+        "role": "neutral",
+        "displayName": "Scene Title",
+        "purpose": "File title on dark scene.",
+        "tonalRamp": [
+          "oklch(15% 0.0059 262.38)",
+          "oklch(27% 0.0092 262.38)",
+          "oklch(39% 0.0118 262.38)",
+          "oklch(51% 0.0132 262.38)",
+          "oklch(63% 0.0132 262.38)",
+          "oklch(75% 0.0112 262.38)",
+          "oklch(87% 0.0079 262.38)",
+          "oklch(95% 0.0033 262.38)"
+        ]
+      },
+      "viewport-state": {
+        "role": "neutral",
+        "displayName": "Paused Dot",
+        "purpose": "Paused-state indicator.",
+        "tonalRamp": [
+          "oklch(15% 0.0166 257.86)",
+          "oklch(27% 0.0258 257.86)",
+          "oklch(39% 0.0331 257.86)",
+          "oklch(51% 0.0368 257.86)",
+          "oklch(63% 0.0368 257.86)",
+          "oklch(75% 0.0313 257.86)",
+          "oklch(87% 0.0221 257.86)",
+          "oklch(95% 0.0092 257.86)"
+        ]
+      },
+      "viewport-muted": {
+        "role": "neutral",
+        "displayName": "Scene State Text",
+        "purpose": "Playback state text.",
+        "tonalRamp": [
+          "oklch(15% 0.0150 258.37)",
+          "oklch(27% 0.0234 258.37)",
+          "oklch(39% 0.0301 258.37)",
+          "oklch(51% 0.0334 258.37)",
+          "oklch(63% 0.0334 258.37)",
+          "oklch(75% 0.0284 258.37)",
+          "oklch(87% 0.0200 258.37)",
+          "oklch(95% 0.0084 258.37)"
+        ]
+      },
+      "viewport-legend": {
+        "role": "neutral",
+        "displayName": "Scene Legend Text",
+        "purpose": "Skeleton side legend.",
+        "tonalRamp": [
+          "oklch(15% 0.0124 255.11)",
+          "oklch(27% 0.0193 255.11)",
+          "oklch(39% 0.0249 255.11)",
+          "oklch(51% 0.0276 255.11)",
+          "oklch(63% 0.0276 255.11)",
+          "oklch(75% 0.0235 255.11)",
+          "oklch(87% 0.0166 255.11)",
+          "oklch(95% 0.0069 255.11)"
+        ]
+      },
+      "viewport-hint": {
+        "role": "neutral",
+        "displayName": "Scene Help Text",
+        "purpose": "Mouse operation hint.",
+        "tonalRamp": [
+          "oklch(15% 0.0179 255.64)",
+          "oklch(27% 0.0278 255.64)",
+          "oklch(39% 0.0357 255.64)",
+          "oklch(51% 0.0397 255.64)",
+          "oklch(63% 0.0397 255.64)",
+          "oklch(75% 0.0338 255.64)",
+          "oklch(87% 0.0238 255.64)",
+          "oklch(95% 0.0099 255.64)"
+        ]
+      },
+      "skeleton-left": {
+        "role": "secondary",
+        "displayName": "Left Cyan",
+        "purpose": "Left-side skeletal data.",
+        "tonalRamp": [
+          "oklch(15% 0.0513 196.56)",
+          "oklch(27% 0.0797 196.56)",
+          "oklch(39% 0.1025 196.56)",
+          "oklch(51% 0.1139 196.56)",
+          "oklch(63% 0.1139 196.56)",
+          "oklch(75% 0.0968 196.56)",
+          "oklch(87% 0.0684 196.56)",
+          "oklch(95% 0.0285 196.56)"
+        ]
+      },
+      "skeleton-right": {
+        "role": "secondary",
+        "displayName": "Right Amber",
+        "purpose": "Right-side skeletal data.",
+        "tonalRamp": [
+          "oklch(15% 0.0531 68.67)",
+          "oklch(27% 0.0826 68.67)",
+          "oklch(39% 0.1062 68.67)",
+          "oklch(51% 0.1180 68.67)",
+          "oklch(63% 0.1180 68.67)",
+          "oklch(75% 0.1003 68.67)",
+          "oklch(87% 0.0708 68.67)",
+          "oklch(95% 0.0295 68.67)"
+        ]
+      },
+      "skeleton-center": {
+        "role": "secondary",
+        "displayName": "Axis Ivory",
+        "purpose": "Central skeletal data.",
+        "tonalRamp": [
+          "oklch(15% 0.0080 253.34)",
+          "oklch(27% 0.0125 253.34)",
+          "oklch(39% 0.0160 253.34)",
+          "oklch(51% 0.0178 253.34)",
+          "oklch(63% 0.0178 253.34)",
+          "oklch(75% 0.0151 253.34)",
+          "oklch(87% 0.0107 253.34)",
+          "oklch(95% 0.0045 253.34)"
+        ]
+      },
+      "joint-selected": {
+        "role": "secondary",
+        "displayName": "Inspection Mint",
+        "purpose": "Selected joint sphere.",
+        "tonalRamp": [
+          "oklch(15% 0.0690 151.68)",
+          "oklch(27% 0.1074 151.68)",
+          "oklch(39% 0.1380 151.68)",
+          "oklch(51% 0.1534 151.68)",
+          "oklch(63% 0.1534 151.68)",
+          "oklch(75% 0.1304 151.68)",
+          "oklch(87% 0.0920 151.68)",
+          "oklch(95% 0.0383 151.68)"
+        ]
+      },
+      "floor": {
+        "role": "neutral",
+        "displayName": "Ground Plane",
+        "purpose": "Diffuse floor material base color.",
+        "tonalRamp": [
+          "oklch(15% 0.0177 255.14)",
+          "oklch(27% 0.0275 255.14)",
+          "oklch(39% 0.0354 255.14)",
+          "oklch(51% 0.0393 255.14)",
+          "oklch(63% 0.0393 255.14)",
+          "oklch(75% 0.0334 255.14)",
+          "oklch(87% 0.0236 255.14)",
+          "oklch(95% 0.0098 255.14)"
+        ]
+      },
+      "ground-grid": {
+        "role": "neutral",
+        "displayName": "Ground Grid",
+        "purpose": "Perspective grid geometry.",
+        "tonalRamp": [
+          "oklch(15% 0.0203 253.90)",
+          "oklch(27% 0.0316 253.90)",
+          "oklch(39% 0.0406 253.90)",
+          "oklch(51% 0.0452 253.90)",
+          "oklch(63% 0.0452 253.90)",
+          "oklch(75% 0.0384 253.90)",
+          "oklch(87% 0.0271 253.90)",
+          "oklch(95% 0.0113 253.90)"
+        ]
+      },
+      "axis-x": {
+        "role": "secondary",
+        "displayName": "Muted X Axis",
+        "purpose": "Short ground X-axis guide.",
+        "tonalRamp": [
+          "oklch(15% 0.0341 23.60)",
+          "oklch(27% 0.0531 23.60)",
+          "oklch(39% 0.0682 23.60)",
+          "oklch(51% 0.0758 23.60)",
+          "oklch(63% 0.0758 23.60)",
+          "oklch(75% 0.0644 23.60)",
+          "oklch(87% 0.0455 23.60)",
+          "oklch(95% 0.0189 23.60)"
+        ]
+      },
+      "axis-z": {
+        "role": "secondary",
+        "displayName": "Muted Z Axis",
+        "purpose": "Short ground Z-axis guide.",
+        "tonalRamp": [
+          "oklch(15% 0.0257 230.96)",
+          "oklch(27% 0.0400 230.96)",
+          "oklch(39% 0.0515 230.96)",
+          "oklch(51% 0.0572 230.96)",
+          "oklch(63% 0.0572 230.96)",
+          "oklch(75% 0.0486 230.96)",
+          "oklch(87% 0.0343 230.96)",
+          "oklch(95% 0.0143 230.96)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "title": {
+        "displayName": "Application Title",
+        "purpose": "Application name in the header."
+      },
+      "section-title": {
+        "displayName": "Section Title",
+        "purpose": "Sidebar group headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Standard commands, checkbox labels, and metadata."
+      },
+      "label": {
+        "displayName": "Compact Label",
+        "purpose": "Viewport buttons, tree labels, and supporting labels."
+      },
+      "micro": {
+        "displayName": "Micro Help",
+        "purpose": "Legends, mouse and keyboard hints, endpoints, and status."
+      },
+      "viewport-title": {
+        "displayName": "Viewport File Title",
+        "purpose": "Loaded file name over the scene."
+      },
+      "timecode": {
+        "displayName": "Timeline Timecode",
+        "purpose": "Elapsed and total time readout."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [],
+    "nativePlatform": {
+      "platform": "Windows desktop",
+      "framework": "WPF",
+      "mode": "Operate",
+      "implementation": "Code-first native application; no HTML/CSS detector applies.",
+      "unitConvention": "Frontmatter px values encode WPF device-independent pixels (DIP), including font sizes. 1 DIP = 1/96 inch. Scene geometry uses separate world-space units.",
+      "previewConvention": "The components array contains self-contained HTML/CSS documentation previews required by the panel. They adapt native controls and do not claim to be source, pixel-perfect platform templates, or a runnable WPF UI.",
+      "tonalRampConvention": "Eight synthesized OKLCH samples per source color, dark to light with reduced chroma at the extremes. These are exploratory swatches, not implemented WPF states or additional normative tokens.",
+      "sourceFiles": [
+        {
+          "path": "PRODUCT.md",
+          "sha256": "79d13bfdcd3bbd54b954c1f0f79624915bf147c1ef4140b900167400ac21b24b"
+        },
+        {
+          "path": "docs/interface-contract.md",
+          "sha256": "57f0380ab52d6d4c64953e4425ca17b5b038149db199cf6e6a8b33b9836e6818"
+        },
+        {
+          "path": "src/BvhPlayer.App/App.xaml",
+          "sha256": "87bef09ef886b23b32b064aec2d2debbdb7e8e99e4a27404ff24f24dc7ef3f9f"
+        },
+        {
+          "path": "src/BvhPlayer.App/MainWindow.xaml",
+          "sha256": "40e8aec092f955eff93ffa9bc8c6708e858d5ff94718dfd726de6eac9b56d29b"
+        },
+        {
+          "path": "src/BvhPlayer.App/SkeletonView.cs",
+          "sha256": "37486dfbdd54988b895679ef21c67e72f691a252ac8605727fa0d7034c305062"
+        },
+        {
+          "path": ".impeccable/review/desktop.png",
+          "sha256": "ad9c58e93a34b994b23f24d38f4e7a2660510ec00926ddc22e07912f474b8e46"
+        },
+        {
+          "path": ".impeccable/review/minimum.png",
+          "sha256": "929dc14155f13ac624f82c01371785dde1782b122c889399e501921740fca392"
+        }
+      ],
+      "window": {
+        "defaultOuterSizeDip": [
+          1320,
+          860
+        ],
+        "minimumOuterSizeDip": [
+          1080,
+          760
+        ],
+        "startupLocation": "CenterScreen",
+        "nonClientChrome": "Standard Windows window chrome; outer sizes include it.",
+        "useLayoutRounding": true
+      },
+      "layout": {
+        "rootRowsDip": [
+          78,
+          "*",
+          132,
+          32
+        ],
+        "workspaceMarginDip": [
+          20,
+          20,
+          20,
+          0
+        ],
+        "workspaceColumnsDip": [
+          "*",
+          18,
+          278
+        ],
+        "toolPanelPaddingDip": [
+          19,
+          18,
+          19,
+          18
+        ],
+        "toolPanelContentMinimumHeightDip": 510,
+        "outerSidebarVerticalScroll": "Auto",
+        "outerSidebarHorizontalScroll": "Disabled",
+        "hierarchyMinimumHeightDip": 72,
+        "hierarchyHorizontalScroll": "Auto",
+        "playbackRegionDip": 132,
+        "transportColumnsDip": [
+          "Auto",
+          20,
+          "*",
+          155
+        ],
+        "playButtonMinimumWidthDip": 96
+      },
+      "minimumSizeObservation": "minimum.png shows the sidebar vertically scrolled with speed, options, hierarchy, and joint details reachable. Some motion-information rows are above the scroll position. The viewport and playback transport remain visible. No mobile reflow exists.",
+      "buttonStates": {
+        "hoverSurfaceOpacity": 0.8,
+        "pressedSurfaceOpacity": 0.6,
+        "disabledSurfaceOpacity": 0.4,
+        "borderThicknessDip": 1,
+        "keyboardFocusedBorderThicknessDip": 2,
+        "defaultMinimumHeightDip": 36,
+        "viewportMinimumHeightDip": 32,
+        "transition": "Immediate WPF ControlTemplate triggers; no authored animation."
+      },
+      "slider": {
+        "heightDip": 28,
+        "trackHeightDip": 4,
+        "horizontalTrackMarginDip": 7,
+        "thumbSizeDip": [
+          14,
+          18
+        ],
+        "thumbBorderDip": 2,
+        "speedMinimum": 0.1,
+        "speedMaximum": 3,
+        "speedStep": 0.1,
+        "speedPresets": [
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "clickToPosition": true
+      },
+      "nativeControls": [
+        "CheckBox retains its platform template and native keyboard/focus behavior.",
+        "TreeView retains WPF/platform expanders, indentation, active/inactive selection brushes, and keyboard navigation.",
+        "Buttons expose focus via template triggers; icon-only controls retain tooltips and AutomationProperties names.",
+        "Tool panel uses a real ScrollViewer; hierarchy is a real TreeView.",
+        "Icons are WPF Path geometry rather than font glyphs."
+      ],
+      "scene": {
+        "renderer": "WPF Viewport3D",
+        "cameraFieldOfViewDegrees": 40,
+        "normalizedHeightWorld": 2.8,
+        "jointRadiiWorld": {
+          "standard": 0.039,
+          "root": 0.057,
+          "endSite": 0.024
+        },
+        "boneRadiusWorld": 0.021,
+        "sharedGeometry": "Sphere and cylinder MeshGeometry3D instances are reused and frozen.",
+        "sharedMaterials": "Brushes and MaterialGroup instances are frozen; selection swaps shared materials on joint spheres.",
+        "animation": "Per-joint and per-bone MatrixTransform3D values change during playback; geometry is not rebuilt per frame.",
+        "sphereSegments": {
+          "rings": 10,
+          "slices": 16
+        },
+        "cylinderSlices": 10,
+        "ambientLightRgb": [
+          137,
+          150,
+          170
+        ],
+        "directionalLights": [
+          {
+            "rgb": [
+              255,
+              255,
+              255
+            ],
+            "direction": [
+              -1,
+              -2,
+              -3
+            ]
+          },
+          {
+            "rgb": [
+              130,
+              170,
+              210
+            ],
+            "direction": [
+              1,
+              -1,
+              2
+            ]
+          }
+        ],
+        "specular": {
+          "wpfArgb": "#55FFFFFF",
+          "specularPower": 35
+        },
+        "loadingOverlayWpfArgb": "#D9111E30",
+        "clipping": "SkeletonView clips to rectangular control bounds. The enclosing Border declares a 12 DIP corner radius but no rounded geometry mask.",
+        "mouse": "Left drag orbits; wheel zooms; right or middle drag pans."
+      },
+      "visualEvidence": [
+        {
+          "path": ".impeccable/review/desktop.png",
+          "purpose": "Default desktop layout and controls."
+        },
+        {
+          "path": ".impeccable/review/minimum.png",
+          "purpose": "Minimum window layout, active native tree selection, and scrolled sidebar."
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "WPF PrimaryButton preview: open-file and play/pause commands. CSS is a documentation adaptation; the application uses a ControlTemplate.",
+      "html": "<button class=\"ds-button ds-primary\"><svg width=\"18\" height=\"17\" viewBox=\"0 0 20 20\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 4H7L9 7H19V18H1ZM1 8H19\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg><span>打开 BVH 文件</span></button>",
+      "css": ".ds-button{font-family:\"Microsoft YaHei UI\",\"Segoe UI\",sans-serif;font-size:13px;font-weight:400;min-height:36px;padding:9px 13px;border:1px solid #D7DEE9;border-radius:7px;cursor:pointer;color:#172438;background:#FFFFFF}.ds-button:hover{opacity:.8}.ds-button:active{opacity:.6}.ds-button:focus-visible{outline:none;border-color:#3F82F4;border-width:2px}.ds-button:disabled{opacity:.4;cursor:default}.ds-primary{display:inline-flex;gap:8px;align-items:center;justify-content:center;background:#245CD7;border-color:#245CD7;color:#FFFFFF}"
+    },
+    {
+      "name": "Neutral Button",
+      "kind": "button",
+      "refersTo": "button-neutral",
+      "description": "WPF neutral button preview for the built-in demo, stepping, stop, and speed presets.",
+      "html": "<button class=\"ds-button\">内置行走示例</button>",
+      "css": ".ds-button{font-family:\"Microsoft YaHei UI\",\"Segoe UI\",sans-serif;font-size:13px;font-weight:400;min-height:36px;padding:9px 13px;border:1px solid #D7DEE9;border-radius:7px;cursor:pointer;color:#172438;background:#FFFFFF}.ds-button:hover{opacity:.8}.ds-button:active{opacity:.6}.ds-button:focus-visible{outline:none;border-color:#3F82F4;border-width:2px}.ds-button:disabled{opacity:.4;cursor:default}"
+    },
+    {
+      "name": "Viewport Button",
+      "kind": "button",
+      "refersTo": "button-viewport",
+      "description": "WPF ViewButton preview. The dark preview backing supplies the actual viewport context.",
+      "html": "<div class=\"ds-view-context\"><button class=\"ds-button ds-view-button\">复位视角</button></div>",
+      "css": ".ds-button{font-family:\"Microsoft YaHei UI\",\"Segoe UI\",sans-serif;font-size:13px;font-weight:400;min-height:36px;padding:9px 13px;border:1px solid #D7DEE9;border-radius:7px;cursor:pointer;color:#172438;background:#FFFFFF}.ds-button:hover{opacity:.8}.ds-button:active{opacity:.6}.ds-button:focus-visible{outline:none;border-color:#3F82F4;border-width:2px}.ds-button:disabled{opacity:.4;cursor:default}.ds-view-context{display:inline-flex;padding:18px 20px;background:#111E30;border-radius:12px}.ds-view-button{background:#203147;border-color:#40516A;color:#E5EDF7;font-size:12px;padding:6px 11px;min-height:32px}"
+    },
+    {
+      "name": "Playback Slider",
+      "kind": "input",
+      "refersTo": "slider",
+      "description": "Browser preview of the custom WPF Slider template. Native app geometry is 28 DIP high with a 4 DIP track and a 14 × 18 DIP thumb; browser track fill is illustrative.",
+      "html": "<label class=\"ds-speed\"><span class=\"ds-speed-heading\">播放速度 <strong>1.0×</strong></span><input class=\"ds-slider\" aria-label=\"播放速度\" type=\"range\" min=\"0.1\" max=\"3\" step=\"0.1\" value=\"1\"/><span class=\"ds-speed-ends\"><span>0.1×</span><span>3.0×</span></span></label>",
+      "css": ".ds-speed{display:block;width:240px;font-family:\"Microsoft YaHei UI\",\"Segoe UI\",sans-serif;font-size:13px;color:#172438}.ds-speed-heading,.ds-speed-ends{display:flex;justify-content:space-between}.ds-speed-heading{font-weight:600}.ds-speed-heading strong{color:#245CD7;font-size:15px}.ds-speed-ends{font-size:11px;color:#526278}.ds-slider{appearance:none;display:block;width:calc(100% - 14px);height:28px;margin:0 7px;background:transparent;cursor:pointer}.ds-slider::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(to right,#245CD7 31%,#C7D2E2 31%)}.ds-slider::-webkit-slider-thumb{appearance:none;width:14px;height:18px;margin-top:-7px;border:2px solid #FFFFFF;border-radius:7px;background:#245CD7}.ds-slider::-moz-range-track{height:4px;border-radius:2px;background:#C7D2E2}.ds-slider::-moz-range-progress{height:4px;border-radius:2px;background:#245CD7}.ds-slider::-moz-range-thumb{width:10px;height:14px;border:2px solid #FFFFFF;border-radius:7px;background:#245CD7}.ds-slider:focus-visible{outline:none}.ds-slider:focus-visible::-webkit-slider-thumb{border-color:#152F61}.ds-slider:focus-visible::-moz-range-thumb{border-color:#152F61}"
+    },
+    {
+      "name": "Native Checkbox",
+      "kind": "input",
+      "refersTo": "checkbox",
+      "description": "Native-control preview, not a reconstruction of the Windows checkbox template. WPF retains its platform tick, focus, and disabled visuals.",
+      "html": "<label class=\"ds-checkbox\"><input type=\"checkbox\" checked/><span>循环播放</span></label>",
+      "css": ".ds-checkbox{display:inline-flex;align-items:center;gap:5px;margin-bottom:7px;font:13px \"Microsoft YaHei UI\",\"Segoe UI\",sans-serif;color:#526278;cursor:pointer}.ds-checkbox input{appearance:auto;margin:0;cursor:pointer}.ds-checkbox input:focus-visible{outline:1px dotted currentColor;outline-offset:2px}"
+    },
+    {
+      "name": "Skeleton Hierarchy Tree",
+      "kind": "nav",
+      "refersTo": "hierarchy-tree",
+      "description": "A self-contained hierarchy preview. The application uses a native WPF TreeView; its platform active/inactive selection brushes and expanders remain authoritative.",
+      "html": "<nav class=\"ds-tree\" aria-label=\"骨骼层级树\"><h3>骨骼层级</h3><details open><summary>Hips</summary><details><summary><span class=\"ds-tree-selected\" tabindex=\"0\">LeftHip</span></summary><span>LeftKnee</span></details><details><summary>RightHip</summary><span>RightKnee</span></details><details><summary>Chest</summary><span>Neck</span></details></details><p>3 通道：Z旋转 → X旋转 → Y旋转</p></nav>",
+      "css": ".ds-tree{width:240px;color:#172438;font:12px \"Microsoft YaHei UI\",\"Segoe UI\",sans-serif}.ds-tree h3{font-size:14px;font-weight:600;margin:0 0 6px}.ds-tree details details{margin-left:16px}.ds-tree summary{cursor:pointer}.ds-tree summary:focus-visible{outline:1px dotted currentColor}.ds-tree-selected:focus-visible{background:Highlight;color:HighlightText;outline:none}.ds-tree p{margin:8px 0 0;font-size:11px;color:#526278;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}"
+    },
+    {
+      "name": "Tool Panel",
+      "kind": "card",
+      "refersTo": "tool-panel",
+      "description": "White fixed-width sidebar preview with the actual information-row alignment and section divider. The live WPF panel uses an outer vertical ScrollViewer at minimum window height.",
+      "html": "<section class=\"ds-tool-panel\"><h3>动作信息</h3><strong class=\"ds-file\">008b.bvh</strong><dl><dt>帧数</dt><dd><strong>513</strong></dd><dt>采样率</dt><dd>60 fps</dd><dt>关节 / 通道</dt><dd>18 / 57</dd></dl><hr/><h3>播放速度</h3></section>",
+      "css": ".ds-tool-panel{width:240px;padding:18px 19px;background:#FFFFFF;border-radius:10px;color:#172438;font:13px \"Microsoft YaHei UI\",\"Segoe UI\",sans-serif}.ds-tool-panel h3{font-size:14px;font-weight:600;margin:0 0 9px}.ds-file{display:block;margin-bottom:9px}.ds-tool-panel dl{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:23px;margin:0 0 2px}.ds-tool-panel dt{color:#526278}.ds-tool-panel dd{text-align:right;margin:0}.ds-tool-panel hr{height:1px;border:0;background:#E5EAF1;margin:8px 0 13px}"
+    },
+    {
+      "name": "Playback Transport",
+      "kind": "custom",
+      "refersTo": "playback-panel",
+      "description": "Transport preview retains a blue text-and-icon play command, quiet framing controls, and a monospace timecode. The live timeline is a native WPF Slider.",
+      "html": "<section class=\"ds-transport\"><div class=\"ds-transport-title\"><strong>播放时间轴</strong><span>帧 101 / 513</span></div><div class=\"ds-transport-controls\"><button class=\"ds-button ds-step\" aria-label=\"停止并回到首帧\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 0H12V12H0Z\"/></svg></button><button class=\"ds-button ds-play\"><svg width=\"11\" height=\"14\" viewBox=\"0 0 11 14\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 0V14L11 7Z\"/></svg><span>播放</span></button><span class=\"ds-timecode\">00:01.67 / 00:08.55</span></div></section>",
+      "css": ".ds-button{font-family:\"Microsoft YaHei UI\",\"Segoe UI\",sans-serif;font-size:13px;font-weight:400;min-height:36px;padding:9px 13px;border:1px solid #D7DEE9;border-radius:7px;cursor:pointer;color:#172438;background:#FFFFFF}.ds-button:hover{opacity:.8}.ds-button:active{opacity:.6}.ds-button:focus-visible{outline:none;border-color:#3F82F4;border-width:2px}.ds-button:disabled{opacity:.4;cursor:default}.ds-transport{padding:12px 18px;border-radius:10px;background:#FFFFFF;color:#172438;font:13px \"Microsoft YaHei UI\",\"Segoe UI\",sans-serif}.ds-transport-title{display:flex;justify-content:space-between;gap:20px;height:25px}.ds-transport-title span{color:#526278;font-size:12px}.ds-transport-controls{display:flex;align-items:center;gap:7px}.ds-step{padding:8px 11px;color:#526278}.ds-play{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:96px;background:#245CD7;border-color:#245CD7;color:#FFFFFF}.ds-timecode{margin-left:20px;font:13px Consolas,monospace}"
+    },
+    {
+      "name": "Skeleton Viewport",
+      "kind": "custom",
+      "refersTo": "skeleton-viewport",
+      "description": "Context preview of the WPF 3D observation field and its semantic legend. The SVG is only a compact documentation schematic; the app renders shared frozen 3D meshes with lighting.",
+      "html": "<section class=\"ds-scene\"><h3>008b.bvh</h3><p class=\"ds-scene-state\"><i></i>已暂停 · 空格键开始播放</p><svg class=\"ds-skeleton\" viewBox=\"0 0 160 200\" width=\"160\" height=\"200\" aria-label=\"骨骼示意\"><g fill=\"none\" stroke-width=\"4\" stroke-linecap=\"round\"><path stroke=\"#DEE7F2\" d=\"M80 18V90L65 112M80 90L95 112\"/><path stroke=\"#54D8DA\" d=\"M80 50L57 62L48 102L53 139M65 112L61 151L65 190\"/><path stroke=\"#FFBE74\" d=\"M80 50L103 62L112 102L107 139M95 112L99 151L95 190\"/></g><g fill=\"#DEE7F2\"><circle cx=\"80\" cy=\"18\" r=\"5\"/><circle cx=\"80\" cy=\"50\" r=\"4\"/><circle cx=\"80\" cy=\"90\" r=\"6\"/></g><circle cx=\"65\" cy=\"112\" r=\"4\" fill=\"#8DFFAE\"/></svg><div class=\"ds-legend\"><span><i class=\"ds-left\"></i>左侧</span><span><i class=\"ds-right\"></i>右侧</span><span><i class=\"ds-center\"></i>中轴</span></div><p class=\"ds-scene-help\">左键拖动旋转 · 滚轮缩放 · 右键拖动平移</p></section>",
+      "css": ".ds-scene{width:380px;padding:18px 20px 19px;background:#111E30;color:#F1F6FF;border-radius:12px;font-family:\"Microsoft YaHei UI\",\"Segoe UI\",sans-serif}.ds-scene h3{font-size:17px;font-weight:600;margin:0}.ds-scene-state{display:flex;align-items:center;gap:7px;margin:7px 0 0;color:#B5C3D8;font-size:12px}.ds-scene-state i{width:6px;height:6px;border-radius:50%;background:#8B9AB0}.ds-skeleton{display:block;margin:0 auto 8px}.ds-legend{display:flex;gap:16px;color:#C1CEDF;font-size:11px}.ds-legend span{display:flex;align-items:center;gap:6px}.ds-legend i{width:6px;height:6px;border-radius:50%}.ds-left{background:#54D8DA}.ds-right{background:#FFBE74}.ds-center{background:#DEE7F2}.ds-scene-help{margin:8px 0 0;color:#A6B8D0;font-size:11px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Motion Workbench",
+    "overview": "BVH Player is a quiet, precise Windows tool for inspecting skeletal motion. The dark observation field gives the moving skeleton priority; white tool surfaces make file facts, playback choices, and hierarchy easy to scan. The phrase above describes the finished implementation rather than a new visual direction.\n\nThe interface uses Chinese task labels, a compact desktop type scale, and familiar WPF controls. Blue identifies commands and adjustable progress. Cyan, warm orange, pale ivory, and mint belong to the skeletal data, where color distinguishes body sides and the inspected joint.",
+    "keyCharacteristics": [
+      "A dark 3D observation field beside light, flat tool surfaces.",
+      "A compact Chinese interface with visible playback controls and keyboard hints.",
+      "One blue UI action color, separated from semantic skeleton colors.",
+      "Fixed desktop structure with a scrollable tool panel at the minimum window size.",
+      "Native WPF interaction, focus, selection, and accessibility conventions."
+    ],
+    "rules": [
+      {
+        "name": "The Command and Data Rule",
+        "body": "Use blue for UI commands and progress. Reserve the cyan, amber, ivory, and mint data colors for the skeleton and its legend.",
+        "section": "colors"
+      },
+      {
+        "name": "The Native Type Rule",
+        "body": "Preserve the Chinese UI font and inherited WPF sizing. Use Consolas only for the timeline timecode.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stable Workspace Rule",
+        "body": "Keep the tool panel fixed in width and let its content scroll at the minimum window size. Preserve visible playback controls while the scene takes the remaining width and height.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Tools Rule",
+        "body": "Keep the 2D controls and panels flat. Use scene lighting for the skeleton's volume.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the light tool panels and dark viewport as separate visual roles.",
+      "Do use the single blue action color for commands and progress, and use skeleton colors only for their data meaning.",
+      "Do treat all interface measurements as WPF DIP and preserve native text scaling and layout rounding.",
+      "Do keep the bottom playback controls visible and allow the fixed-width sidebar to scroll at the minimum window size.",
+      "Do preserve keyboard focus, native checkbox and tree behavior, vector icons, tooltips, and automation names.",
+      "Do reuse and freeze shared 3D meshes and materials; animate transforms instead of rebuilding geometry."
+    ],
+    "donts": [
+      "Don't add decorative shadows or hover lift to the flat tool surfaces.",
+      "Don't introduce a mobile breakpoint or collapse the sidebar based on these desktop captures.",
+      "Don't replace WPF system tree selection or checkbox styling with invented fixed states.",
+      "Don't describe the sidebar as fully visible without scrolling at the minimum size.",
+      "Don't promote world-space skeleton radii or screenshot pixels into interface DIP tokens.",
+      "Don't treat the sidecar's HTML/CSS previews as application source or a replacement for native WPF controls."
+    ]
+  }
+}
+
