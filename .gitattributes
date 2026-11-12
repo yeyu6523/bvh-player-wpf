@@ -1,0 +1,13 @@
+* text=auto
+*.cs text eol=lf
+*.xaml text eol=lf
+*.csproj text eol=lf
+*.props text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.bvh text eol=lf
+*.png binary
+*.ico binary
+*.log whitespace=-blank-at-eof

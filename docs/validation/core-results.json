@@ -1,0 +1,126 @@
+{
+  "passed": 35,
+  "failed": 0,
+  "inputs": [
+    {
+      "file": "008b.bvh",
+      "sha256": "d3421fe73b9ba11a7f4aa2e2fb69e940019ed515ea4dcb7eb230b415e2456ccc",
+      "frames": 513,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 8.550171,
+      "testMs": 68
+    },
+    {
+      "file": "012.bvh",
+      "sha256": "c90169df69e986eaf0feeee1aae2663ba4bc53f0884cfcd5f77fed531a1db6c8",
+      "frames": 886,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 14.766962000000001,
+      "testMs": 75
+    },
+    {
+      "file": "035.bvh",
+      "sha256": "1f3316ff03c068d3503b7de28c1a489cfab5a2e0995b933d49e1099af1336cbb",
+      "frames": 316,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 5.2667720000000005,
+      "testMs": 27
+    },
+    {
+      "file": "041.bvh",
+      "sha256": "49433765f94862b1ecdf70f8452db42d293dcc3f96d16a5753e7ac5955ef847f",
+      "frames": 312,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 5.2001040000000005,
+      "testMs": 27
+    },
+    {
+      "file": "057.bvh",
+      "sha256": "5a2880da5ac84ed594a2366422163b4c3bb3a923e61359ed9f973f493c7bfe36",
+      "frames": 385,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 6.4167950000000005,
+      "testMs": 32
+    },
+    {
+      "file": "073.bvh",
+      "sha256": "92915cebc3b6189eb207feaaa4edd1e0e3b2de99d304e28a8aa8e2ee245525fe",
+      "frames": 1761,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 29.350587,
+      "testMs": 144
+    },
+    {
+      "file": "076.bvh",
+      "sha256": "1799a672d88a17343c7f1f895559860384914526fe3ae593021c9cfef281f720",
+      "frames": 2179,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 36.317393,
+      "testMs": 169
+    },
+    {
+      "file": "KICK R.bvh",
+      "sha256": "ca0d7dd82625e626d46cbe6073e646f020bf0c09275863b5236a588c017c1b50",
+      "frames": 514,
+      "joints": 18,
+      "channels": 57,
+      "frameTime": 0.016667,
+      "duration": 8.566838,
+      "testMs": 14
+    },
+    {
+      "file": "walk1.bvh",
+      "sha256": "7eb866b51a1892efdf2f0c82c0e048ac3973075a1f41bb7e50c9bf70d2c572e8",
+      "frames": 8531,
+      "joints": 27,
+      "channels": 84,
+      "frameTime": 0.008333,
+      "duration": 71.088823,
+      "testMs": 260
+    },
+    {
+      "file": "walk2.bvh",
+      "sha256": "f956eed7a2a86a9b216af48ce18b6cbf2ee3509971f6a2186ffccfbc33faa1a4",
+      "frames": 1631,
+      "joints": 27,
+      "channels": 84,
+      "frameTime": 0.008333,
+      "duration": 13.591123,
+      "testMs": 38
+    },
+    {
+      "file": "walk3.bvh",
+      "sha256": "349d66f371c5a9ed47a0e53b7a9edd61c4b8e51917804c34e40b1d32d9c96a41",
+      "frames": 1383,
+      "joints": 27,
+      "channels": 84,
+      "frameTime": 0.008333,
+      "duration": 11.524539,
+      "testMs": 32
+    },
+    {
+      "file": "studio-walk.bvh",
+      "sha256": "f28db0578c81c1937b9a5ec2b0f57698e64f550fc41e7cc6963779312c6b7d8b",
+      "frames": 240,
+      "joints": 19,
+      "channels": 60,
+      "frameTime": 0.016666666666666666,
+      "duration": 4,
+      "testMs": 5
+    }
+  ]
+}

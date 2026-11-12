@@ -1,0 +1,21 @@
+{
+  "src/BvhPlayer.App/App.xaml": "87bef09ef886b23b32b064aec2d2debbdb7e8e99e4a27404ff24f24dc7ef3f9f",
+  "src/BvhPlayer.App/App.xaml.cs": "f82e0be8ea9ffdab093664095fde16f1ebb7a71ab49c0e10000af25dba92b3c2",
+  "src/BvhPlayer.App/Assets/app.ico": "1ec08ef1a77c6e42e202aef6c9d2f0c195ae272e9b9dec8762bea976a2701877",
+  "src/BvhPlayer.App/BvhPlayer.App.csproj": "9c3c56b0f59f1ab8dadc6d7d850c001fcf2129119832e82745e3f05bf6886542",
+  "src/BvhPlayer.App/MainWindow.xaml": "40e8aec092f955eff93ffa9bc8c6708e858d5ff94718dfd726de6eac9b56d29b",
+  "src/BvhPlayer.App/MainWindow.xaml.cs": "34a9d23898c0008a16230346e7c73cad92e7cb60fd2723a135875fd53fd58107",
+  "src/BvhPlayer.App/SkeletonView.cs": "37486dfbdd54988b895679ef21c67e72f691a252ac8605727fa0d7034c305062",
+  "src/BvhPlayer.Core/BvhDocument.cs": "ef4e26ebcb7a38b8369af2c472eae417a702677679f454ff6c8a044e0cf7d97d",
+  "src/BvhPlayer.Core/BvhPlayer.Core.csproj": "ed7c0f20902846adddafbfc178137e3a0dd399bba0a8c656195f76855d2233bb",
+  "src/BvhPlayer.Core/PlaybackClock.cs": "657c211a2012d29ac1722cf253ee4b1d2bb7a690e33e62967f06a0ea19e20c8a",
+  "src/BvhPlayer.Core/PoseEvaluator.cs": "341696e874a629a0cb6b992e83f83fd99fb209cf45ea2d52279a6419ab6b2d3f",
+  "tests/BvhPlayer.Tests/BvhPlayer.Tests.csproj": "e7b015fff8e357cd2641fa3c28f73deecd3d34f4e0832e4e213f48fa1bb9e442",
+  "tests/BvhPlayer.Tests/Program.cs": "94509c7c99e38d70aa3b4fa10ae59860829420adf972a53db41e3e40522f6d86",
+  "tests/BvhPlayer.UiSmoke/BvhPlayer.UiSmoke.csproj": "73880d899f6fe07497589dd751fb87bc31af22f28df057bbde1c638dfd7f49f4",
+  "tests/BvhPlayer.UiSmoke/Program.cs": "bb0aa792f895cd27720d8041e8d20f995534f70f9d0bf2131b81f976252b43d7",
+  "samples/studio-walk.bvh": "f28db0578c81c1937b9a5ec2b0f57698e64f550fc41e7cc6963779312c6b7d8b",
+  "BVHPlayer.sln": "dbbe5f00c7bcba4e2a62837d2d26714c0e3f7b65ce8d7feb1a4a1120fcb7c1d1",
+  "Directory.Build.props": "791eda902f1e04381e314a3e338a45c307e0f3cb899e711924a447992da31537",
+  "build.ps1": "2b865f6b00fe8ae1e0904bc89c5a3113c362a5c39a21b7abab9e520e4763f829"
+}

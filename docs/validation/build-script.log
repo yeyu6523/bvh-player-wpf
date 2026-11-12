@@ -1,0 +1,61 @@
+  正在确定要还原的项目…
+  已还原 D:\desktop\op\BVHPlayer\src\BvhPlayer.Core\BvhPlayer.Core.csproj (用时 143 毫秒)。
+  已还原 D:\desktop\op\BVHPlayer\src\BvhPlayer.App\BvhPlayer.App.csproj (用时 241 毫秒)。
+  2 个项目(共 4 个)是最新的，无法还原。
+  BvhPlayer.UiSmoke -> D:\desktop\op\BVHPlayer\tests\BvhPlayer.UiSmoke\bin\Release\net10.0-windows\BvhPlayer.UiSmoke.dll
+  BvhPlayer.Core -> D:\desktop\op\BVHPlayer\src\BvhPlayer.Core\bin\Release\net10.0\BvhPlayer.Core.dll
+  BvhPlayer.Tests -> D:\desktop\op\BVHPlayer\tests\BvhPlayer.Tests\bin\Release\net10.0\BvhPlayer.Tests.dll
+  BvhPlayer.App -> D:\desktop\op\BVHPlayer\src\BvhPlayer.App\bin\Release\net10.0-windows\win-x64\BVHPlayer.dll
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.27
+PASS Hierarchy, parent indices, End Site, frame/channel counts
+PASS Forward kinematics: parent rotation and End Site
+PASS Declared Z-X order is not X-Z order
+PASS Non-root translation channels and root OFFSET
+PASS Colon in joint names, braces without spaces, BOM, scientific notation
+PASS Quaternion interpolation takes the short arc across 360 degrees
+PASS Single frame and clamp
+PASS Reject truncated motion
+PASS Reject extra motion
+PASS Reject zero frame time
+PASS Reject zero frames
+PASS Reject NaN
+PASS Reject infinity
+PASS Reject unknown channel
+PASS Reject duplicate channel
+PASS Reject missing brace
+PASS Reject fractional frames
+PASS Play, pause, speed, resume, stop
+PASS Loop wraps large elapsed times
+PASS No loop stops at last frame and can restart
+PASS Seek, step, and frame boundary clamps
+PASS Numeric parsing ignores current locale
+PASS Invalid speed and elapsed time are rejected
+PASS Integration studio-walk.bvh
+PASS Integration 008b.bvh
+PASS Integration 012.bvh
+PASS Integration 035.bvh
+PASS Integration 041.bvh
+PASS Integration 057.bvh
+PASS Integration 073.bvh
+PASS Integration 076.bvh
+PASS Integration KICK R.bvh
+PASS Integration walk1.bvh
+PASS Integration walk2.bvh
+PASS Integration walk3.bvh
+RESULT 35 passed, 0 failed
+  正在确定要还原的项目…
+  已还原 D:\desktop\op\BVHPlayer\src\BvhPlayer.Core\BvhPlayer.Core.csproj (用时 201 毫秒)。
+  已还原 D:\desktop\op\BVHPlayer\src\BvhPlayer.App\BvhPlayer.App.csproj (用时 221 毫秒)。
+  BvhPlayer.Core -> D:\desktop\op\BVHPlayer\src\BvhPlayer.Core\bin\Release\net10.0\BvhPlayer.Core.dll
+  BvhPlayer.App -> D:\desktop\op\BVHPlayer\src\BvhPlayer.App\bin\Release\net10.0-windows\win-x64\BVHPlayer.dll
+  BvhPlayer.App -> D:\desktop\op\BVHPlayer\artifacts\win-x64\
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          2637EBD52387CF6867F3151E4814D4732FCB316CA36E52DD99603B5CA46C6E67       D:\desktop\op\BVHPlayer\artifact…
+

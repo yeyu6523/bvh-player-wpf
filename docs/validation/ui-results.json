@@ -1,0 +1,28 @@
+{
+  "passed": 19,
+  "failed": 0,
+  "executable": "BVHPlayer.exe",
+  "pid": 38760,
+  "windowHandle": 1313218,
+  "checks": [
+    "Stop shows first frame",
+    "Speed slider changes to 1x",
+    "Timeline seeks while paused",
+    "Next and previous frame buttons step the pose",
+    "Playback at 1x advances frames",
+    "Pause keeps the frame unchanged",
+    "2x playback advances about twice as far",
+    "Minimum speed 0.1x",
+    "Maximum speed 3x",
+    "1x preset works",
+    "Front, side, and reset camera controls respond",
+    "Non-loop playback stops at final frame",
+    "Play restarts after reaching end",
+    "File dialog imports supplied BVH data",
+    "Imported file can seek",
+    "Malformed input shows an error without crashing",
+    "Main process remains responsive after all controls",
+    "Minimum window keeps hierarchy and joint info accessible by scrolling",
+    "Selecting a joint at minimum size updates its channel information"
+  ]
+}

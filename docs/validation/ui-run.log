@@ -1,0 +1,23 @@
+PASS Stop shows first frame
+OBSERVED initial speed 1
+PASS Speed slider changes to 1x
+PASS Timeline seeks while paused
+PASS Next and previous frame buttons step the pose
+PASS Playback at 1x advances frames
+PASS Pause keeps the frame unchanged
+PASS 2x playback advances about twice as far
+PASS Minimum speed 0.1x
+PASS Maximum speed 3x
+PASS 1x preset works
+PASS Front, side, and reset camera controls respond
+PASS Non-loop playback stops at final frame
+PASS Play restarts after reaching end
+OBSERVED dialog filename D:\desktop\Downloads\BVH解析\data\008b.bvh
+OBSERVED clicked 打开(O)
+PASS File dialog imports supplied BVH data
+PASS Imported file can seek
+PASS Malformed input shows an error without crashing
+PASS Main process remains responsive after all controls
+PASS Minimum window keeps hierarchy and joint info accessible by scrolling
+PASS Selecting a joint at minimum size updates its channel information
+RESULT 19 UI checks passed. PID 38760; HWND 1313218
